@@ -10,3 +10,30 @@ a{
 #main-footer{
     margin-top: 200px !important;
 }
+#cardEncabezado {
+    width: 96%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+  }
+  #btnCancelar {
+    margin-right: 1%;
+  }
+  #titulo {
+    margin-top: 1%;
+  }
+  
+  .lblLeft {
+    text-align: left;
+  }
+  .lblRight {
+    text-align: right;
+  }
+  .inputTextRight{
+    text-align: right;
+  }
+  
+  .table-responsive {
+    margin-bottom: 2%;
+  }

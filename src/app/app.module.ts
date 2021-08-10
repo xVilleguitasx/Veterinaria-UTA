@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { HistoriaClinicaComponent } from './pages/historia-clinica/historia-clinica.component';
+import { CrearHistoriaClinicaComponent } from './pages/crear-historia-clinica/crear-historia-clinica.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InicioComponent,
-    HistoriaClinicaComponent
+    HistoriaClinicaComponent,
+    CrearHistoriaClinicaComponent
   ],
   imports: [
     BrowserModule,

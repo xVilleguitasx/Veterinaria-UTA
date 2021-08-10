@@ -1,0 +1,1615 @@
+<div>
+    <nav class="navbar navbar-expand-sm navbar-danger bg-danger">
+        
+        <h2><img src="https://image.flaticon.com/icons/png/512/60/60178.png" alt="" style="width:50px">
+            Hospital Veterinario UTA</h2>
+   
+
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+          
+
+        
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>   Bienvenido Alex
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Perfil</a></li>
+                          <li> <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Configuraciones</a></li>
+                          
+                        </ul>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            
+        </div>
+       
+    </nav>
+
+    <!--Layout principal-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!--Layout de 3 columnas-->
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Menú Principal</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center bg-danger">
+                                <a class="text-white" href="historia">Historia Clinica</a>
+                              <!--   <span class="badge badge-primary badge-pill">10</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Hospitalización</a>
+                              <!--   <span class="badge badge-primary badge-pill">200</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">500</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Post-Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">14</span> -->
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                        <div class="card-header bg-dark text-white">
+                            <h4><i class="fas fa-align-justify"></i> Administración</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Usuarios</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Mascotas</a>                                   
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Turnos</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="">Configuraciones</a>                                  
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!--Layout de 9 columnas-->
+            <div class="col-sm-12 col-md-9">
+                <div class="row">
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="panel.html">Inicio</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">Historias Clinicas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                
+
+           
+               <div class="card mt-2">
+                   <div class="card-header bg-dark text-white">
+                       <h4><!-- <i class="fas fa-table"></i> -->Historias Clinicas</h4>
+                   </div>
+                  
+<div class="card text-center" id="cardEncabezado">
+    <div class="card-body">
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Nº Historia Clínica</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="historiaClinica" readonly>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Día de Admisión</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="diaAdmision" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Propietario</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="diaAdmision">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputState" class="col-sm-4 col-form-label lblLeft">C.I. Nº</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="diaAdmision">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputCity" class="col-sm-4 col-form-label lblLeft">E-mail:</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Dirección: </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputState" class="col-sm-4 col-form-label lblLeft"> Ciudad: </label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Teléfono/Celular:</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Nombre del Paciente</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="historiaClinica" >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">MVZ a cargo</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="diaAdmision" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer card-header">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 RESEÑA
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="diaAdmision">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row mb-3">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="inputCity">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PROCEDIMIENTO
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Procedimiento</label>
+                            <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                    
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                             
+                              <div class="col-sm-8">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Nº</th>
+                                          <th scope="col">Nombre</th>
+                                         
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td>Desparasitación</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Hospitalización</td>
+                                            
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                      
+                              </div>
+                            </div>
+                          </div>
+                       
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    HISTORIA
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Vacunación:</label>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Carnet:</label>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="row">
+                            <label for="inputCity" class="col-sm-6 col-form-label lblLeft">Desparasitaciones:</label>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Examen coprológico:</label>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <label for="inputState" class="col-sm-4 col-form-label lblLeft">Pipeta antipulgas:</label>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                          </div>
+                        </div>
+                       
+                      </div>
+                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    DIETA
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Dieta</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Frecuencia</label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option> 1</option>
+                                    <option> 2</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <label for="inputState" class="col-sm-4 col-form-label lblLeft">Horario</label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="inputCity">
+                        
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <label for="inputState" class="col-sm-4 col-form-label lblLeft">Disposición de agua:</label>
+                                <div class="col-sm-1">
+                                    <label class="form-check-label" for="exampleCheck1">Si </label>
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                </div>
+                                <div class="col-sm-1">
+                                    <label class="form-check-label" for="exampleCheck1">No </label>
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                </div>
+                              </div>
+                            </div>
+                         
+                          </div>
+                          <div class="row mb-3">
+                            
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">Nº</th>
+                                      <th scope="col">Nombre</th>
+                                     
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Casera</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Balanceado</td>
+                                        
+                                      </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                         
+                          </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    PROCEDENCIA
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Vivienda:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Seleccione...</option>
+                                      <option>Urbana</option>
+                                      <option>Rural</option>
+                                    </select>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Adquisición:</label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option>Compra</option>
+                                    <option>Obsequio</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Lugar de Adquisición:</label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option>Casa</option>
+                                    <option>Mercado</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Animales de compañía:</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Número:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="historiaClinica" >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Especies</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="historiaClinica" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    ESTADO REPRODUCTIVO
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Montas</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft"> Controladas:</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Gestante:</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Aproximado de días :</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de monta:</label>
+                              <div class="col-sm-8">
+                                <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Camadas anteriores:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Novedades:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                        
+                  </div>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Montas</th>
+                          <th scope="col">Controladas</th>
+                          <th scope="col">Gestante</th>
+                          <th scope="col">Aproximado de días</th>
+                          <th scope="col">Fecha de monta</th>
+                          <th scope="col">Camadas anteriores</th>
+                          <th scope="col">Novedades</th>
+                          
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Si</td>
+                          <td>Si</td>
+                          <td>24</td>
+                          <td>09/08/2021</td>
+                          <td>2</td>
+                          <td>Ninguna</td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    ASEO
+                  </button>
+                  
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse " aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Baños anteriores</label>
+                              <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">Si </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            <div class="col-sm-1">
+                                <label class="form-check-label" for="exampleCheck1">No </label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Número: </label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Frecuencia: </label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option>Diaria</option>
+                                    <option>Semanal</option>
+                                  </select>
+                    
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Temperatura Agua:</label>
+                              <div class="col-sm-8">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Seleccione...</option>
+                                    <option>Caliente</option>
+                                    <option>Fría</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft"> Producto utilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Seleccione...</option>
+                                      <option>Jabón Vet</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Secado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Seleccione...</option>
+                                      <option>Si</option>
+                                      <option>No</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Baños anteriores</th>
+                          <th scope="col">Número</th>
+                          <th scope="col">Frecuencia</th>
+                          <th scope="col">Temperatura Agua</th>
+                          <th scope="col">Producto utilizado</th>
+                          <th scope="col">Secado</th>
+                          
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Si</td>
+                          <td>Semanal</td>
+                          <td>34</td>
+                          <td>Jabón Vet</td>
+                          <td>Si </td>
+                    
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                        </div>
+                       
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   RESEÑA
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Especie</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                      
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Raza</label>
+                              <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="diaAdmision">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Edad:</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Fecha de Nacimiento:</label>
+                              <div class="col-sm-8">
+                                  <input type="date" class="form-control" id="inputCity">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputState" class="col-sm-4 col-form-label lblLeft">Sexo:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="row">
+                              <label for="inputCity" class="col-sm-4 col-form-label lblLeft">Esterilizado:</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="historiaClinica" class="col-sm-4 col-form-label lblLeft">Aptitud</label>
+                              <div class="col-sm-8">
+                                  <select id="inputState" class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="row">
+                              <label for="diaAdmision" class="col-sm-4 col-form-label lblLeft">Color y señas particulares:</label>
+                              <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-danger" id="btnCancelar">Cancelar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+  </div>
+
+                   </div>
+        </div>
+    </div>
+
+
+</div>
