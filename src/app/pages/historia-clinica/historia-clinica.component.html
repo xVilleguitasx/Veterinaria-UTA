@@ -1,0 +1,270 @@
+<div>
+    <nav class="navbar navbar-expand-sm navbar-danger bg-danger">
+        
+        <h2><img src="https://image.flaticon.com/icons/png/512/60/60178.png" alt="" style="width:50px">
+            Hospital Veterinario UTA</h2>
+   
+
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+          
+
+        
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>   Bienvenido Alex
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Perfil</a></li>
+                          <li> <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Configuraciones</a></li>
+                          
+                        </ul>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            
+        </div>
+       
+    </nav>
+
+    <!--Layout principal-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!--Layout de 3 columnas-->
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Menú Principal</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="historia">Historia Clinica</a>
+                              <!--   <span class="badge badge-primary badge-pill">10</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Hospitalización</a>
+                              <!--   <span class="badge badge-primary badge-pill">200</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">500</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Post-Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">14</span> -->
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                        <div class="card-header bg-dark text-white">
+                            <h4><i class="fas fa-align-justify"></i> Administración</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Usuarios</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Mascotas</a>                                   
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Turnos</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="">Configuraciones</a>                                  
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!--Layout de 9 columnas-->
+            <div class="col-sm-12 col-md-9">
+                <div class="row">
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="panel.html">Inicio</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">Historias Clinicas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-body">
+                        <div class="col-sm-12 text-right">
+                            <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#agregarCategoria">
+                                <i class="fas fa-plus"></i> Nueva Historia
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+               <!--Últimos productos-->
+               <div class="card mt-5">
+                   <div class="card-header bg-dark text-white">
+                       <h4><!-- <i class="fas fa-table"></i> -->Historias Clinicas</h4>
+                       <div class="row g-3">
+                       <div class="dropdown col-auto">
+                           Buscar por: 
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Seleccione...  
+                        </button>
+                        <ul class="dropdown-menu ml-md-auto" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Codigo</a></li>
+                          <li><a class="dropdown-item" href="#">Nombre</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                      <input type="password" class="form-control ">
+                    </div>
+                    </div>
+                   </div>
+                   <div class="card-body">
+                       <table class="table table-striped">
+                           <thead>
+                               <tr>
+                                   <th>#</th>
+                                   <th>Codigo</th>
+                                   <th>Usuairo</th>
+                                   <th>Mascota</th>
+                                   <th>Acciones</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td>1</td>
+                                   <td>ABC1</td>
+                                   <td>Alex</td>
+                                   <td>Chimuelo</td>
+                                   <td style="width:150px">
+                                        <div class="btn-group" role="group">
+                                            <a href="" class="btn btn-primary text-white">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+
+                                            <a href="" class="btn btn-success text-white">
+                                                <i class="fas fa-list-alt"></i>
+                                            </a>
+
+                                            <a href="" class="btn btn-danger text-white">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </div>
+                                   </td>
+                               </tr>
+
+                               <tr>
+                                    <td>2</td>
+                                    <td>ABC2</td>
+                                    <td>Cinthya</td>
+                                    <td>Ross</td>
+                                    <td style="width:150px">
+                                         <div class="btn-group" role="group">
+                                             <a href="" class="btn btn-primary text-white">
+                                                 <i class="fas fa-edit"></i>
+                                             </a>
+ 
+                                             <a href="" class="btn btn-success text-white">
+                                                 <i class="fas fa-list-alt"></i>
+                                             </a>
+ 
+                                             <a href="" class="btn btn-danger text-white">
+                                                 <i class="fas fa-trash-alt"></i>
+                                             </a>
+                                         </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                        <td>3</td>
+                                        <td>ABC3</td>
+                                        <td>Rebeca</td>
+                                        <td>Chimuelo</td>
+                                        <td style="width:150px">
+                                             <div class="btn-group" role="group">
+                                                 <a href="" class="btn btn-primary text-white">
+                                                     <i class="fas fa-edit"></i>
+                                                 </a>
+     
+                                                 <a href="" class="btn btn-success text-white">
+                                                     <i class="fas fa-list-alt"></i>
+                                                 </a>
+     
+                                                 <a href="" class="btn btn-danger text-white">
+                                                     <i class="fas fa-trash-alt"></i>
+                                                 </a>
+                                             </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                            <td>4</td>
+                                            <td>ABC4</td>
+                                            <td>Jair</td>
+                                            <td>Doc</td>
+                                            <td style="width:150px">
+                                                 <div class="btn-group" role="group">
+                                                     <a href="" class="btn btn-primary text-white">
+                                                         <i class="fas fa-edit"></i>
+                                                     </a>
+         
+                                                     <a href="" class="btn btn-success text-white">
+                                                         <i class="fas fa-list-alt"></i>
+                                                     </a>
+         
+                                                     <a href="" class="btn btn-danger text-white">
+                                                         <i class="fas fa-trash-alt"></i>
+                                                     </a>
+                                                 </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                                <td>5</td>
+                                                <td>ABC5</td>
+                                                <td>Diego</td>
+                                                <td>Bombon</td>
+                                                <td style="width:150px">
+                                                     <div class="btn-group" role="group">
+                                                         <a href="" class="btn btn-primary text-white">
+                                                             <i class="fas fa-edit"></i>
+                                                         </a>
+             
+                                                         <a href="" class="btn btn-success text-white">
+                                                             <i class="fas fa-list-alt"></i>
+                                                         </a>
+             
+                                                         <a href="" class="btn btn-danger text-white">
+                                                             <i class="fas fa-trash-alt"></i>
+                                                         </a>
+                                                     </div>
+                                                </td>
+                                            </tr>
+                              
+                           </tbody>
+                       </table>
+                   </div>
+                   </div>
+        </div>
+    </div>
+
+
+</div>
