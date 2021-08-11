@@ -1,0 +1,1142 @@
+<div>
+    <nav class="navbar navbar-expand-sm navbar-danger bg-danger">
+    <div class="container">
+        <h2><img src="https://image.flaticon.com/icons/png/512/60/60178.png" alt="" style="width:50px">
+            Hospital Veterinario UTA</h2>
+   
+
+        
+            <form class="d-flex">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>   Bienvenido Alex
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Perfil</a></li>
+                          <li> <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Configuraciones</a></li>
+                          
+                        </ul>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            
+        </div>
+            </form>
+    </div>
+    </nav>
+
+    <!--Layout principal-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!--Layout de 3 columnas-->
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Menú Principal</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center ">
+                                <a class="text-dark" href="historia">Historia Clinica</a>
+                              <!--   <span class="badge badge-primary badge-pill">10</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center bg-danger">
+                                <a class="text-white" href="hospitalizacion">Hospitalización</a>
+                              <!--   <span class="badge badge-primary badge-pill">200</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">500</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Post-Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">14</span> -->
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                        <div class="card-header bg-dark text-white">
+                            <h4><i class="fas fa-align-justify"></i> Administración</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Usuarios</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Mascotas</a>                                   
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Turnos</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="">Configuraciones</a>                                  
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!--Layout de 9 columnas-->
+            <div class="col-sm-12 col-md-9">
+                <div class="row">
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="panel.html">Inicio</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">Hospitalización</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                
+
+           
+               <div class="card mt-2">
+                   <div class="card-header bg-dark text-white">
+                       <h4><!-- <i class="fas fa-table"></i> -->Hospitalización</h4>
+                   </div>
+                  
+
+                   <div class="card">
+                    <div class="row border-secondary">
+                           <!-- Start Ficha--> 
+                            <div class="col left">
+                              <div id="accordion"> 
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          DATOS GENERALES
+                                        </button>
+                                      </h2>
+                                  </div>
+                              
+                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body"> 
+                                            <div class="form-group row">
+                                    
+                                                <div class="col-md-3">
+                                                 <label  for="fecha">Fecha</label>
+                                                 <input type="date" class="form-control" id="fecha" name="fecha">
+                                                 </div>
+                 
+                                               <div class="col-md-3">
+                                                 <label  for="horainicio">Hora Inicio</label>
+                                                 <input type="time" class="form-control"  id="horainicio" name="horainicio">
+                                                 </div>
+                 
+                                                  <div class="col-md-3" >
+                                                     <label  for="horafinal">Hora Fin.</label>
+                                                     <input type="time"  class="form-control" id="horafinal" name="horafinal"/> 
+                                                 </div>
+                                               </div>
+                                             
+                                             <div class="form-group row">
+                                               <div class="col-sm-9">
+                                                 <label  for="procedimiento">Procedimiento</label>
+                                                 <input type="text" class="form-control" id="procedimiento" name="procedimiento" placeholder="Procedimiento">
+                                               </div>
+                                             </div>
+                                             
+                                             <div class="form-group row">
+                                              
+                                                 <div class=" col-md-3">
+                                                     <label  for="cirujano">Cirujano</label>
+                                                     <input class="form-control" id="cirujano" name="cirujano" placeholder="Cirujano"> 
+                                                 </div>
+                 
+                                                 <div class=" col-md-3">
+                                                     <label  for="anestesiologo">Anestesiologo</label>
+                                                     <input class="form-control"  id="anestesiologo" name="anestesiologo" placeholder="Anestesiologo">
+                                                        
+                                                 </div>
+                                                 
+                                                 <div class=" col-md-3" >
+                                                     <label  for="ayudante">Ayudante</label>
+                                                     <input class="form-control" id="ayudante" name="ayudante" placeholder="Ayudante">
+                                                        
+                                                 </div>
+                 
+                 
+                                             </div>
+                                             
+                                             <div class="form-group row"> 
+                                                   <div class=" col-md-3">
+                                                     <label  for="instrumentista">Instrumentista</label>
+                                                       <input class="form-control"  id="instrumentista" name="instrumentista" placeholder="Instrumentista">
+                                                   </div> 
+                                                   <div class=" col-md-3" >
+                                                     <label  for="auxiliar">Auxiliar</label>
+                                                       <input class="form-control" id="auxiliar" name="auxiliar" placeholder="Auxiliar"> 
+                                                   </div>
+                   
+                                               </div> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          DATOS PACIENTE
+                                        </button>
+                                      </h2>
+                                   
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body"> 
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-3">
+                                                    <label  for="nombre">Nombre</label>
+                                                    <input class="form-control"  id="nombre" name="nombre" placeholder="Nombre">
+                                                </div> 
+                                                <div class=" col-md-3" >
+                                                    <label  for="especie">Especie</label>
+                                                    <select class="form-control" id="especie" name="especie" placeholder="especie"> 
+                                                        <option>Canina</option>
+                                                        <option>Felina</option>
+                                                    </select> 
+                                                </div>
+                                                <div class=" col-md-3" > 
+                                                    <label for="otra"> </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="Otra">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row"> 
+                                                
+                                                <div class=" col-md-3" > 
+                                                    <label for="raza">Raza</label>
+                                                    <input type="text" class="form-control" id="raza" name="raza" placeholder="Raza">
+                                                </div>
+                                                <div class=" col-md-3">
+                                                    <label  for="edad">Edad</label>
+                                                    <input type="number" min="1" class="form-control"  id="edad" name="edad" placeholder="Edad">
+                                                </div> 
+                                                
+                                                <div class=" col-md-3" > 
+                                                    <label  for="sexo">Sexo</label>
+                                                    <select class="form-control" id="sexo" name="sexo" placeholder="Sexo"> 
+                                                        <option>Macho</option>
+                                                        <option>Hembra</option>
+                                                        <option>Entero</option>
+                                                        <option>Esterilizado</option>
+                                                    </select> 
+                                                      </div>
+                                            </div>
+                                         
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          CONSTANTES PRE-QUIRÚRGICAS
+                                        </button>
+                                      </h2>
+                                  
+                                  </div>
+                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                                <div class="form-group row"> 
+                                                    <div class="col-md-2">
+                                                        <label>Peso (kg)</label>
+                                                        <input type="text" class="form-control" value="5">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>Temp (ºC)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>FC (lpm)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>FR  (rpm)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <label>Pulso (lpm)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md-2">
+                                                        <label for="mucosa">Mucosas (color)
+                                                        </label>
+                                                        <select class="form-control" id="mucosa" name="mucosa" placeholder="Mucosa"> 
+                                                            <option>Rosadas</option>
+                                                            <option>Pálidas</option>
+                                                            <option>Cianóticas</option>
+                                                            <option>Hiperémicas</option>
+                                                            <option>Ictéricas</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>TLLC (seg)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label>Deshidrat (%)
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="asa">ASA
+                                                        </label>
+                                                        <select class="form-control" id="asa" name="asa"> 
+                                                            <option>Seleccione...</option>
+                                                            <option>I</option>
+                                                            <option>II</option>
+                                                            <option>III</option>
+                                                            <option>IV</option>
+                                                            <option>V</option>
+                                                            <option>E</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                              EXÁMENES PRE-QUIRÚRGICOS
+                                            </button>
+                                          </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                      <div class="card-body">
+                                            <div class="form-group row"> 
+                                                <div class="col-md-2">
+                                                    <label for="hemograma">Hemograma</label>
+                                                    <select class="form-control" id="hemograma" name="hemograma"> 
+                                                        <option>Seleccione...</option>
+                                                        <option>Bioquímica</option>
+                                                        <option>Ecografía</option>
+                                                        <option>Urológico</option>
+                                                        <option>Rayos X</option>
+                                                        <option>ECG</option>
+                                                        <option>RM/TAC</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>		
+                                                    </label> 
+                                                <textarea class="form-control" placeholder="Descripción">
+                                                </textarea>
+                                            </div>
+                                            <div class="col-md-3">  
+                                                <div class="ui segment">
+                                                    <div class="field">
+                                                      <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+                                                      <label for="#elegir">Elige imagen a subir: </label>
+                                                      <input id="elegir" name="uploadedfile" type="file" /><br />
+                                                    </div>
+                                                  </div>
+                                        </div>
+                                      
+                                    </div> 
+                                      </div>
+                                    </div>
+                                  </div> 
+                            <div class="card">
+                              <div class="card-header" id="headingFive">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      DATOS GENERALES ANESTESIA
+                                    </button>
+                                  </h2>
+                              </div>
+                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                        <div class="form-group row"> 
+                                            <div class="col-md-2">
+                                                <label>Anestesia
+                                                </label>
+                                                <select class="form-control">
+                                                    <option>Inhalatoria</option>
+                                                    <option>TIVA</option>
+                                                    <option>Intramuscular</option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-md-3">
+                                                <label for=""></label>
+                                                <div>
+                                                    <input   type="radio" id="contactChoice1"
+                                                           name="contact" value="local">
+                                                    <label  for="contactChoice1">Local</label>
+                                                    <input  type="radio" id="contactChoice2"
+                                                           name="contact" value="regional">
+                                                    <label for="contactChoice2">Regional</label>
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-2">
+                                                <label for="">Fluidoterapia</label>
+                                                <select class="form-control">  
+                                                    <option>Lactato de Ringer</option> 
+                                                    <option>Cloruro de Sodio</option>
+                                                    <option>Dextrosa</option> 
+                                                    <option >Otro</option>
+                                                </select>
+                                            </div>   
+                                                <div class=" col-md-2" > 
+                                                    <label for="otra">ml/h</label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="ml/h">
+                                                </div>
+                                                <div class=" col-md-2" > 
+                                                    <label for="otra">Catéter Nº </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="Nº">
+                                                </div>
+                                                </div> 
+                
+                                                <div class="form-group row"> 
+                                                    <div class="col-md-3">
+                                                        <label for="">Intubación Endotraqueal</label>
+                                                        <select class="form-control">  
+                                                            <option>Si</option> 
+                                                            <option>No</option> 
+                                                        </select>
+                                                    </div> 
+                                                    <div class=" col-md-3" > 
+                                                        <label for="otra">Tubo Nº</label>
+                                                        <input type="text" class="form-control" id="otra" name="otra" placeholder="Tubo Nº">
+                                                    </div>
+                                                    <div class=" col-md-3" > 
+                                                        <label for="otra">Problemas</label>
+                                                        <input type="text" class="form-control" id="otra" name="otra" placeholder="Problemas">
+                                                    </div> 
+                                                    </div> 
+                                    
+                                </div>
+                              </div>
+                            </div> 
+                          <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      FARMACOLOGÍA: DOSIFICACIÓN
+                                    </button>
+                                  </h2>
+                            
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                              <div class="card-body"> 
+                                        <div class="form-group row"> 
+                                            <div class=" col-md-2" > 
+                                                <label for="otra">Fármacos Preanestésicos</label> 
+                                                <label for="otra"></label> 
+                                            </div> 
+                                            <div class=" col-md-3" > 
+                                                <label for="otra">  Fármaco </label>
+                                                <input type="text" class="form-control" id="otra" name="otra" placeholder="  Fármaco ">
+                                            </div> 
+                                            <div class=" col-md-1" > 
+                                                <label for="otra">  Dosis (mg) </label>
+                                                <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                            </div>
+                                            <div class=" col-md-1" > 
+                                                <label for="otra">Dosis (mL)  </label>
+                                                <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                            </div>
+                                            <div class=" col-md-1" > 
+                                                <label for="otra">Vía </label>
+                                                <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                            </div>
+                                            <div class=" col-md-1" >  
+                                                <label for=""></label>
+                                                <input type="button" class="form-control"  value="Agregar">
+                                            </div>
+                                            </div> 
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-2" > 
+                                                   
+                                                </div> 
+                                                <div class=" col-md-6" >
+                                                    <table class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Fármaco</th>
+                                                            <th scope="col">Dosis (mg)</th>
+                                                            <th scope="col">Dosis (mL)</th>
+                                                            <th scope="col">Vía</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>F1.....</td>
+                                                            <td>0</td>
+                                                            <td>1</td>
+                                                            <td>Oral</td>
+                                                          </tr>
+                                                         
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-2" > 
+                                                    <label for="otra">Estado Preinducción</label> 
+                                                    <label for="otra"></label> 
+                                                </div> 
+                                                <div class="col-md-3">
+                                                    <label for="">Sedación</label>
+                                                    <select class="form-control">  
+                                                        <option>Ninguna</option> 
+                                                        <option>Leve</option> 
+                                                        <option value="">Moderada</option>
+                                                        <option value="">Mucha</option>
+                                                    </select>
+                                                </div> 
+                                                <div class="col-md-3">
+                                                    <label for="">Resistencia</label>
+                                                    <select class="form-control">  
+                                                        <option>Ninguna</option> 
+                                                        <option>Leve</option> 
+                                                        <option value="">Moderada</option>
+                                                        <option value="">Mucha</option>
+                                                    </select>
+                                                </div> 
+                                            </div> 
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-2" > 
+                                                    <label for="otra">Fármacos Inductores</label> 
+                                                    <label for="otra"></label> 
+                                                </div> 
+                                                <div class=" col-md-3" > 
+                                                    <label for="otra">  Fármaco </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="  Fármaco ">
+                                                </div> 
+                                                <div class=" col-md-1" > 
+                                                    <label for="otra">  Dosis (mg) </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                                </div>
+                                                <div class=" col-md-1" > 
+                                                    <label for="otra">Dosis (mL)  </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                                </div>
+                                                <div class=" col-md-1" > 
+                                                    <label for="otra">Vía </label>
+                                                    <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-2" > 
+                                                   
+                                                </div> 
+                                                <div class=" col-md-6" >
+                                                    <table class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Fármaco</th>
+                                                            <th scope="col">Dosis (mg)</th>
+                                                            <th scope="col">Dosis (mL)</th>
+                                                            <th scope="col">Vía</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>F1.....</td>
+                                                            <td>0</td>
+                                                            <td>1</td>
+                                                            <td>Oral</td>
+                                                          </tr>
+                                                         
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                            </div> 
+                              </div>
+                            </div>
+                          </div> 
+                        <div class="card">
+                          <div class="card-header" id="headingSeven">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  FÁRMACOS DE EMERGENCIA
+                                </button>
+                              </h2>
+                          </div>
+                          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body">
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-2" > 
+                                            <label for="otra">  Fármaco </label>
+                                            <input type="text" class="form-control" id="otra" name="otra" placeholder="  Fármaco ">
+                                        </div> 
+                                        <div class=" col-md-1" > 
+                                            <label for="otra">  Dosis (mg) </label>
+                                            <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                        </div>
+                                        <div class=" col-md-1" > 
+                                            <label for="otra">Dosis (mL)  </label>
+                                            <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                        </div>
+                                        <div class=" col-md-1 " > 
+                                            <label for="otra">Vía </label>
+                                            <input type="text" class="form-control" id="otra" name="otra" placeholder="">
+                                        </div>
+                                        <div class=" col-md-1 " > 
+                                            <label for=""> </label>
+                                            <input type="button" class="form-control" value="Agregar">
+                                        </div>
+                                        </div> 
+                                        <div class="form-group row"> 
+                                            <div class=" col-md-6" >
+                                                <table class="table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Fármaco</th>
+                                                        <th scope="col">Dosis (mg)</th>
+                                                        <th scope="col">Dosis (mL)</th>
+                                                        <th scope="col">Vía</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>F1.....</td>
+                                                        <td>0</td>
+                                                        <td>1</td>
+                                                        <td>Oral</td>
+                                                      </tr>
+                                                     
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                        </div> 
+                            </div>
+                          </div>
+                        </div> 
+                    
+                      <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                  DATOS GENERALES ANESTESIA
+                                </button>
+                              </h2>
+                       
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                          <div class="card-body"> 
+                                <div class="form-group row"> 
+                                    <div class=" col-md-2" > 
+                                        <label for="otra">  Posicionamiento </label>
+                                        <select type="text" class="form-control" id="otra" name="otra" >
+                                            <option value=""> DCDorsal</option>
+                                            <option value="">  DCVentral</option>
+                                            <option value="">DCLtDer</option>
+                                            <option value="">DCLtIzq</option>
+                                        </select>
+                                    </div> 
+                                    <div class=" col-md-2" > 
+                                        <label for="otra">  </label>
+                                        <input type="text" class="form-control" id="otra" name="otra" placeholder="Otro">
+                                    </div>
+                                   
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-2" > 
+                                            <label for="otra">  Monitorización </label>
+                                            <label for=""></label>
+                                        </div> 
+                                        <div class=" col-md-1" > 
+                                            <label for="sat">  SatO2</label>
+                                            <select type="text" class="form-control" id="sat" name="sat" placeholder="">
+                                                <option value="">Seleccione...</option>
+                                                <option value="">Lengua</option>
+                                                <option value="">Otro</option>
+                                            </select>
+                                        </div>
+                                        <div class=" col-md-2" > 
+                                            <label for="otra">  </label>
+                                            <input type="text" class="form-control" id="otra" name="otra" placeholder="Otro">
+                                               
+                                        </div>
+                                        <div class=" col-md-2" > 
+                                            <label for="otra">Temp</label>
+                                            <select type="text" class="form-control" id="otra" name="otra" >
+                                                <option value="">Rectal</option>
+                                                <option value="">Esofágica</option>
+                                                <option value="">Presión Art.</option>
+                                                <option value="">ECG</option>
+                                            </select>
+                                        </div> 
+                                        <div class="col-md-1">
+                                            <label for="">Presión Art.</label>
+                                            <select class="form-control">  
+                                                <option>Si</option> 
+                                                <option>No</option> 
+                                            </select>
+                                        </div> 
+                                        <div class="col-md-1">
+                                            <label for="">ECG</label>
+                                            <select class="form-control">  
+                                                <option>Si</option> 
+                                                <option>No</option> 
+                                            </select>
+                                        </div> 
+                                    </div> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                  CONTROL INTRA QUIRÚRGICO
+                                </button>
+                              </h2>
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                              
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                          <div class="card-body">
+                                <div class="form-group row text-center"> 
+                                    <div class="col-md-1"></div>
+                                <div style="width: 70px;">0</div>
+                                <div style="width: 70px;">5</div>
+                                <div style="width: 70px;">10</div>
+                                <div style="width: 70px;">15</div>
+                                <div style="width: 70px;">20</div>
+                                <div style="width: 70px;">25</div>
+                                <div style="width: 70px;">30</div>
+                                <div style="width: 70px;">35</div>
+                                <div style="width: 70px;">40</div>
+                                <div style="width: 70px;">45</div>
+                                <div style="width: 70px;">50</div>
+                                <div style="width: 70px;">55</div>
+                                <div style="width: 70px;">60</div>
+                                <div style="width: 70px;">65</div>
+                               
+                                </div>
+                               
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> FC </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                       <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                              
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> FR </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                                    
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> Tº </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                      
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> PA:Sistólica </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                     
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> PA:Diastólica </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                           
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> PA:Media </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                                       
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> Sat O2 </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                                      
+                                    </div> 
+                                    <div class="form-group row"> 
+                                        <div class=" col-md-1" > 
+                                            <label for=""> EtCO2 </label> 
+                                        </div> 
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                             
+                                   </div>
+                                                    <div class="form-group row"> 
+                                                        <div class=" col-md-1" > 
+                                                            <label for=""> CAM </label> 
+                                                        </div> 
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                        
+                                                  </div>
+                                                  <div class="form-group row"> 
+                                                    <div class=" col-md-1" > 
+                                                        <label for=""> FÁRMACOS </label> 
+                                                    </div> 
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                    <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                   
+                                              </div>
+                                              <div class="form-group row"> 
+                                                <div class=" col-md-1" > 
+                                                    <label for=""> Intra Operat </label> 
+                                                </div> 
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>    
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                                <div style="width: 70px;">  <input class="form-control" type="text" name="" id="" >  </div>                             
+                                               
+                                          <div class="form-group row"> 
+                                            <div class=" col-md-2" >
+                                                <label for="">Complicaciones</label>
+                                                <select class="form-control"  name="" id="">
+                                                    <option value="">No</option>
+                                                    <option value="">Respiratorias</option>
+                                                    <option value="">Arritmias</option>
+                                                    <option value="">Vasculares</option>
+                                                    <option value="">Exítus</option>
+                                                    <option value="">Eutanasia</option>
+                
+                                                </select>
+                                            </div>
+                                                <div class=" col-md-5" >
+                                                    <label for=""></label>
+                                            <input class="form-control" type="text" name="" id="" placeholder="Otras">
+                                                </div>
+                                          </div>
+                                            <div class="form-group row"> 
+                                                <div class=" col-md-2" >
+                                                    <label for="">Comentarios Anestesiólogo</label>
+                                                    <label for=""></label>
+                                            </div> 
+                                                    <div class=" col-md-5" >
+                                                        <textarea class="form-control" placeholder="Firma">
+                                                        </textarea>
+                                                    </div>
+                                            <div class=" col-md-2" >
+                                                <label for="">Firma</label>
+                                                <input type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row"> 
+                                            <div class=" col-md-2" >
+                                                <label for="">Comentarios Cirujano</label>
+                                                <label for=""></label>
+                                        </div> 
+                                                <div class=" col-md-5" >
+                                                    <textarea class="form-control"  placeholder="Firma">
+                                                    </textarea>
+                                                </div>
+                                                <div class=" col-md-2" >
+                                                    <label for="">Firma</label>
+                                                    <input type="text">
+                                                </div>
+                                      </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                  CONTROL INTRA QUIRÚRGICO: PROCEDIMIENTOS DE EMERGENCIA
+                                </button>
+                              </h2>
+                        
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                          <div class="card-body"> 
+                                <div class="form-group row"> 
+                                    <div class=" col-8" > 
+                                        <textarea name="" id=""  class="form-control"></textarea>
+                                    </div>                                          
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwelve">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                  FÁRMACOS POST-QUIRÚRGICOS: HOSPITAL
+                                </button>
+                              </h2>
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                               
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                          <div class="card-body">
+                                <div class="form-group row"> 
+                                    <div class=" col-md-2" > 
+                                        <label for="">Fármaco </label> 
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                        <label for="">Dosis (mg) </label> 
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                        <label for="">Dosis (mL)</label> 
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                        <label for="">Vía </label> 
+                                    </div> 
+                                    <div class=" col-md-1" > 
+                                        <label for="">Hora</label> 
+                                    </div>  
+                                    <div class=" col-md-2" > 
+                                        <label for="">Responsable</label> 
+                                    </div>                                       
+                                </div> 
+                                <div class="form-group row"> 
+                                    <div class=" col-md-2"> 
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                       <input class="form-control" type="text" name="" id="">
+                                    </div>  
+                                    <div class=" col-md-1" > 
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div> 
+                                    <div class=" col-md-1" > 
+                                        <input class="form-control" type="time" name="" id="">
+                                    </div>  
+                                    <div class=" col-md-2" > 
+                                        <input class="form-control" type="text" name="" id="">
+                                    </div>      
+                                    <div class=" col-md-1" > 
+                                        <input class="form-control" type="button" name="" id="" value="Agregar">
+                                    </div>                                 
+                                </div> 
+                                <div class="form-group row"> 
+                                    <div class=" col-md-8" >
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Fármaco</th>
+                                                <th scope="col">Dosis (mg)</th>
+                                                <th scope="col">Dosis (mL)</th>
+                                                <th scope="col">Hora</th>
+                                                <th scope="col">Responsable</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>F1.....</td>
+                                                <td>0</td>
+                                                <td>1</td>
+                                                <td>Oral</td>
+                                                <td></td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>  
+                        </div>
+                        </div>
+                      </div>
+                 
+                    </div>
+                </div> 
+                </div>
+                 </div>
+                
+                   </div>
+        </div>
+    </div>
+
+
+</div>

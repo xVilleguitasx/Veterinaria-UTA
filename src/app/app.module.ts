@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { HistoriaClinicaComponent } from './pages/historia-clinica/historia-clinica.component';
 import { CrearHistoriaClinicaComponent } from './pages/crear-historia-clinica/crear-historia-clinica.component';
+import { HospitalizacionComponent } from './pages/hospitalizacion/hospitalizacion.component';
+import { CrearHospitalizacionComponent } from './pages/crear-hospitalizacion/crear-hospitalizacion.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CrearHistoriaClinicaComponent } from './pages/crear-historia-clinica/cr
     LoginComponent,
     InicioComponent,
     HistoriaClinicaComponent,
-    CrearHistoriaClinicaComponent
+    CrearHistoriaClinicaComponent,
+    HospitalizacionComponent,
+    CrearHospitalizacionComponent
   ],
   imports: [
     BrowserModule,
