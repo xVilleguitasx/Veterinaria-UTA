@@ -9,6 +9,13 @@ import { HistoriaClinicaComponent } from './pages/historia-clinica/historia-clin
 import { CrearHistoriaClinicaComponent } from './pages/crear-historia-clinica/crear-historia-clinica.component';
 import { HospitalizacionComponent } from './pages/hospitalizacion/hospitalizacion.component';
 import { CrearHospitalizacionComponent } from './pages/crear-hospitalizacion/crear-hospitalizacion.component';
+import { TurnosComponent } from './pages/turnos/turnos.component';
+import { QuirurgicoComponent } from './pages/quirurgico/quirurgico.component';
+import { CrearQuirurgicoComponent } from './pages/crear-quirurgico/crear-quirurgico.component';
+import { PostQuirurgicoComponent } from './pages/post-quirurgico/post-quirurgico.component';
+import { CrearPostQuirurgicoComponent } from './pages/crear-post-quirurgico/crear-post-quirurgico.component';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { MascotasComponent } from './pages/mascotas/mascotas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { CrearHospitalizacionComponent } from './pages/crear-hospitalizacion/cre
     HistoriaClinicaComponent,
     CrearHistoriaClinicaComponent,
     HospitalizacionComponent,
-    CrearHospitalizacionComponent
+    CrearHospitalizacionComponent,
+    TurnosComponent,
+    QuirurgicoComponent,
+    CrearQuirurgicoComponent,
+    PostQuirurgicoComponent,
+    CrearPostQuirurgicoComponent,
+    UsuariosComponent,
+    MascotasComponent
   ],
   imports: [
     BrowserModule,

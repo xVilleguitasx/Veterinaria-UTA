@@ -1,0 +1,169 @@
+<div>
+    <nav class="navbar navbar-expand-sm navbar-danger bg-danger">
+    <div class="container">
+        <h2><img src="https://image.flaticon.com/icons/png/512/60/60178.png" alt="" style="width:50px">
+            Hospital Veterinario UTA</h2>
+   
+
+        
+            <form class="d-flex">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>   Bienvenido Alex
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Perfil</a></li>
+                          <li> <a href="#" class="dropdown-item"><i class="fas fa-cog"></i> Configuraciones</a></li>
+                          
+                        </ul>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            
+        </div>
+            </form>
+    </div>
+    </nav>
+
+    <!--Layout principal-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!--Layout de 3 columnas-->
+            <div class="col-sm-12 col-md-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Menú Principal</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center ">
+                                <a class="text-dark" href="historia">Historia Clinica</a>
+                              <!--   <span class="badge badge-primary badge-pill">10</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="hospitalizacion">Hospitalización</a>
+                              <!--   <span class="badge badge-primary badge-pill">200</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="inicio">Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">500</span> -->
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center ">
+                                <a class="text-black" href="inicio">Post-Quirúrgico</a>
+                              <!--   <span class="badge badge-primary badge-pill">14</span> -->
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                        <div class="card-header bg-dark text-white">
+                            <h4><i class="fas fa-align-justify"></i> Administración</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center ">
+                                    <a class="text-dark" href="#">Usuarios</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center bg-danger">
+                                    <a class="text-white" href="#">Mascotas</a>                                   
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="#">Turnos</a>                                  
+                                </li>
+                                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                                    <a class="text-dark" href="">Configuraciones</a>                                  
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!--Layout de 9 columnas-->
+            <div class="col-sm-12 col-md-9">
+                <div class="row">
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="panel.html">Inicio</a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">Mascotas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#nuevo_usuario"><i class="fas fa-plus"></i></button>
+                    <div id="nuevo_usuario" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title" id="my-modal-title">Nuevo Usuario</h5>
+                                    <button class="close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="post" autocomplete="off">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" class="form-control" placeholder="Ingrese Nombre" name="nombre" id="nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="correo">Raza</label>
+                                            <input type="email" class="form-control" placeholder="Ingrese Correo Electrónico" name="correo" id="correo">
+                                        </div>
+                                       
+                                        <input type="submit" value="Registrar" class="btn btn-primary">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped table-bordered mt-2" id="tbl">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre</th>
+                                    <th>Raza</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                        <tr>
+                    
+                                            <td>1</td>
+                                            <td>Chichico</td>
+                                            <td>Gran Danes</td>
+                                            <td> 
+                                                    <a href="" class="btn btn-success"><i class='fas fa-edit'></i></a>
+                                                    <form action="" method="post" class="confirmar d-inline">
+                                                        <button class="btn btn-danger" type="submit"><i class='fas fa-trash-alt'></i> </button>
+                                                    </form> 
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+             
+        </div>
+    </div>
+
+
+</div>
